@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <!--
-2015-9-29: Created with FontForge (http://fontforge.org)
+2015-10-2: Created with FontForge (http://fontforge.org)
 -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20150302 at Tue Sep 29 13:50:52 2015
+Created by FontForge 20150302 at Fri Oct  2 17:08:11 2015
  By Carly Culver
 Copyright (c) 2015, Carly Culver
 </metadata>
@@ -22,7 +22,7 @@ Copyright (c) 2015, Carly Culver
     bbox="-0.5 -64 512 448"
     underline-thickness="25.6"
     underline-position="-51.2"
-    unicode-range="U+F10E-F4B3"
+    unicode-range="U+F10E-F4B6"
   />
     <missing-glyph />
     <glyph glyph-name="ion-android-arrow-dropdown" unicode="&#xf35f;" horiz-adv-x="256" 
@@ -185,6 +185,9 @@ d="M140 143l-140 98h171l53 159l53 -159h171l-140 -98l54 -159l-138 99l-138 -99zM22
 d="M448 241l-140 -98l54 -159l-138 99l-138 -99l54 159l-140 98h171l53 159l53 -159h171zM331 27l-43 122l108 75h-131l-41 123l-41 -123h-131l108 -75l-43 -122l107 76z" />
     <glyph glyph-name="ion-ios-star" unicode="&#xf4b3;" 
 d="M448 241l-140 -98l54 -159l-138 99l-138 -99l54 159l-140 98h171l53 159l53 -159h171z" />
+    <glyph glyph-name="ion-ios-sunny-outline" unicode="&#xf4b6;" horiz-adv-x="320" 
+d="M151 296v56h18v-56h-18zM151 32v60h18v-60h-18zM264 183v18h56v-18h-56zM0 183v18h60v-18h-60zM240 130l34 -34l-12 -12l-33 34zM64 306l34 -33l-12 -12l-34 34zM229 272l33 34l12 -12l-34 -33zM52 96l34 34l11 -12l-33 -34zM160 116c-42 0 -76 34 -76 76s34 76 76 76
+s76 -34 76 -76s-34 -76 -76 -76zM160 251c-32 0 -59 -27 -59 -59s27 -59 59 -59s59 27 59 59s-27 59 -59 59z" />
     <glyph glyph-name="ion-iphone" unicode="&#xf1fa;" horiz-adv-x="192" 
 d="M168 384c13 0 24 -11 24 -24v-336c0 -13 -11 -24 -24 -24h-144c-13 0 -24 11 -24 24v336c0 13 11 24 24 24h144zM80 348v0c0 -2 2 -4 4 -4h24c2 0 4 2 4 4v0c0 2 -2 4 -4 4h-24c-2 0 -4 -2 -4 -4zM68 352c-2 0 -4 -2 -4 -4s2 -4 4 -4s4 2 4 4s-2 4 -4 4zM96 16
 c9 0 16 7 16 16s-7 16 -16 16s-16 -7 -16 -16s7 -16 16 -16zM176 64v256h-160v-256h160z" />
