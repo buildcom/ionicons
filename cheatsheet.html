@@ -1,0 +1,4373 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ionicons v2.0.0 Cheatsheet</title>
+  <style>
+    * {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    body {
+      background: #fff;
+      color: #444;
+      font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    a, a:visited {
+      color: #888;
+      text-decoration: underline;
+    }
+    a:hover, a:focus { color: #000; }
+
+    header {
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 20px;
+      overflow: hidden;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      color: #888;
+      float: left;
+      font-size: 36px;
+      font-weight: 300;
+    }
+
+    header a {
+      float: right;
+      font-size: 14px;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 1200px;
+      min-width: 960px;
+      padding: 0 20px;
+      width: 95%;
+    }
+
+    .icon-row {
+      border-bottom: 1px dotted #ccc;
+      padding: 10px 0 20px;
+      margin-bottom: 20px;
+    }
+    .ion {
+      -webkit-touch-callout: text;
+      -webkit-user-select: text;
+      -khtml-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+    }
+
+    .preview-icon { vertical-align: bottom; }
+
+    .preview-scale {
+      color: #888;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    .step {
+      display: inline-block;
+      line-height: 1;
+      position: relative;
+      width: 10%;
+    }
+
+    .step i {
+      -webkit-transition: opacity .3s;
+      -moz-transition: opacity .3s;
+      -ms-transition: opacity .3s;
+      -o-transition: opacity .3s;
+      transition: opacity .3s;
+    }
+
+    .step:hover i { opacity: .3; }
+    
+    .size-12 { font-size: 12px; }
+    .size-14 { font-size: 14px; }
+    .size-16 { font-size: 16px; }
+    .size-18 { font-size: 18px; }
+    .size-21 { font-size: 21px; }
+    .size-24 { font-size: 24px; }
+    .size-32 { font-size: 32px; }
+    .size-48 { font-size: 48px; }
+    .size-64 { font-size: 64px; }
+    .size-96 { font-size: 96px; }
+    
+    .usage { margin-top: 10px; }
+    .usage input {
+      font-family: monospace;
+      margin-right: 3px;
+      padding: 2px 5px;
+      text-align: center;
+      -webkit-touch-callout: text;
+      -webkit-user-select: text;
+      -khtml-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+    }
+
+    .usage label { 
+      font-size: 12px; 
+      text-align: right; 
+      padding: 0 3px 0 60px;
+    }
+    .usage label:first-child { padding-left: 0; }
+    .usage .name { width: 180px; }
+    .usage .html { width: 80px; }
+    .usage .css { width: 80px; }
+
+    footer {
+      color: #888;
+      font-size: 12px;
+      padding: 20px 0;
+    }
+  </style>
+  <link href="css/ionicons.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Ionicons v2.0.0 Cheatsheet, 111 icons:</h1>
+      <p><a href="http://ionicons.com/">Ionicons Homepage</a></p>
+    </header>
+    <div class="content">
+      <div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-alert-circled"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-alert-circled" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf100;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf100;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f100" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-arrow-dropdown" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf35f;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf35f;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f35f" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-checkbox-outline" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf373;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf373;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f373" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-checkbox-outline-blank" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf372;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf372;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f372" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-close"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-close" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2d7;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2d7;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2d7" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-favorite"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-favorite" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf388;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf388;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f388" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-favorite-outline" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf387;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf387;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f387" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-folder"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-folder" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2e0;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2e0;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2e0" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-restaurant"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-restaurant"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-restaurant"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-restaurant"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-restaurant"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-restaurant"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-restaurant"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-restaurant"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-restaurant"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-restaurant"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-restaurant" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf3aa;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf3aa;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f3aa" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-settings"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-settings"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-settings"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-settings"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-settings"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-settings"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-settings"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-settings"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-settings"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-settings"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-settings" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2f7;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2f7;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2f7" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-archive"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-archive"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-archive"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-archive"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-archive"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-archive"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-archive"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-archive"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-archive"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-archive"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-archive" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf102;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf102;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f102" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-arrow-graph-up-right"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-arrow-graph-up-right"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-arrow-graph-up-right"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-arrow-graph-up-right"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-arrow-graph-up-right"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-arrow-graph-up-right"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-arrow-graph-up-right"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-arrow-graph-up-right"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-arrow-graph-up-right"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-arrow-graph-up-right"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-arrow-graph-up-right" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf262;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf262;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f262" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-arrow-up-c"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-arrow-up-c"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-arrow-up-c"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-arrow-up-c"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-arrow-up-c"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-arrow-up-c"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-arrow-up-c"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-arrow-up-c"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-arrow-up-c"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-arrow-up-c"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-arrow-up-c" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf10e;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf10e;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f10e" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-briefcase"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-briefcase"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-briefcase"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-briefcase"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-briefcase"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-briefcase"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-briefcase"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-briefcase"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-briefcase"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-briefcase"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-briefcase" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf26c;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf26c;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f26c" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-box"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-box"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-box"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-box"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-box"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-box"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-box"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-box"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-box"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-box"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-box" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf15e;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf15e;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f15e" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-cart"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-cart"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-cart"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-cart"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-cart"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-cart"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-cart"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-cart"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-cart"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-cart"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-cart" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf138;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf138;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f138" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-cart-large"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-cart-large"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-cart-large"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-cart-large"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-cart-large"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-cart-large"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-cart-large"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-cart-large"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-cart-large"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-cart-large"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-cart-large" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf15b;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf15b;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f15b" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-cart-small"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-cart-small"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-cart-small"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-cart-small"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-cart-small"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-cart-small"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-cart-small"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-cart-small"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-cart-small"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-cart-small"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-cart-small" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf15c;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf15c;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f15c" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-delivery-truck"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-delivery-truck"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-delivery-truck"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-delivery-truck"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-delivery-truck"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-delivery-truck"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-delivery-truck"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-delivery-truck"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-delivery-truck"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-delivery-truck"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-delivery-truck" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf15f;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf15f;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f15f" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-logo"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-logo"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-logo"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-logo"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-logo"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-logo"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-logo"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-logo"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-logo"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-logo"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-logo" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf159;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf159;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f159" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-logo-simplified"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-logo-simplified"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-logo-simplified"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-logo-simplified"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-logo-simplified"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-logo-simplified"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-logo-simplified"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-logo-simplified"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-logo-simplified"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-logo-simplified"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-logo-simplified" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf158;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf158;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f158" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-order-status"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-order-status"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-order-status"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-order-status"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-order-status"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-order-status"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-order-status"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-order-status"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-order-status"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-order-status"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-order-status" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf13c;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf13c;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f13c" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-rewards"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-rewards"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-rewards"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-rewards"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-rewards"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-rewards"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-rewards"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-rewards"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-rewards"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-rewards"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-rewards" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf146;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf146;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f146" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-rewards-color"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-rewards-color"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-rewards-color"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-rewards-color"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-rewards-color"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-rewards-color"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-rewards-color"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-rewards-color"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-rewards-color"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-rewards-color"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-rewards-color" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf145;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf145;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f145" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-social-facebooklike"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-social-facebooklike"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-social-facebooklike"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-social-facebooklike"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-social-facebooklike"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-social-facebooklike"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-social-facebooklike"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-social-facebooklike"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-social-facebooklike"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-social-facebooklike"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-social-facebooklike" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf155;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf155;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f155" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-social-googleplusone"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-social-googleplusone"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-social-googleplusone"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-social-googleplusone"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-social-googleplusone"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-social-googleplusone"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-social-googleplusone"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-social-googleplusone"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-social-googleplusone"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-social-googleplusone"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-social-googleplusone" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf156;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf156;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f156" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-social-stumbleupon"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-social-stumbleupon"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-social-stumbleupon"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-social-stumbleupon"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-social-stumbleupon"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-social-stumbleupon"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-social-stumbleupon"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-social-stumbleupon"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-social-stumbleupon"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-social-stumbleupon"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-social-stumbleupon" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf157;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf157;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f157" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-social-youtube-outline"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-social-youtube-outline"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-social-youtube-outline"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-social-youtube-outline"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-social-youtube-outline"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-social-youtube-outline"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-social-youtube-outline"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-social-youtube-outline"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-social-youtube-outline"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-social-youtube-outline"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-social-youtube-outline" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf160;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf160;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f160" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-user"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-user"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-user"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-user"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-user"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-user"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-user"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-user"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-user"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-user"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-user" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf14c;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf14c;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f14c" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-zoom-in"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-zoom-in"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-zoom-in"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-zoom-in"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-zoom-in"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-zoom-in"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-zoom-in"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-zoom-in"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-zoom-in"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-zoom-in"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-zoom-in" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf153;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf153;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f153" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-build-zoom-out"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-build-zoom-out"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-build-zoom-out"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-build-zoom-out"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-build-zoom-out"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-build-zoom-out"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-build-zoom-out"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-build-zoom-out"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-build-zoom-out"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-build-zoom-out"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-build-zoom-out" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf154;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf154;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f154" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-calculator"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-calculator"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-calculator"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-calculator"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-calculator"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-calculator"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-calculator"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-calculator"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-calculator"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-calculator"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-calculator" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf26d;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf26d;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f26d" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-calendar"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-calendar"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-calendar"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-calendar"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-calendar"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-calendar"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-calendar"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-calendar"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-calendar"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-calendar"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-calendar" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf117;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf117;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f117" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-camera"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-camera"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-camera"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-camera"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-camera"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-camera"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-camera"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-camera"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-camera"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-camera"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-camera" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf118;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf118;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f118" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-card"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-card"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-card"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-card"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-card"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-card"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-card"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-card"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-card"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-card"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-card" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf119;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf119;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f119" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-cash"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-cash"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-cash"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-cash"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-cash"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-cash"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-cash"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-cash"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-cash"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-cash"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-cash" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf316;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf316;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f316" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-chatbox"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-chatbox"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-chatbox"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-chatbox"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-chatbox"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-chatbox"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-chatbox"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-chatbox"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-chatbox"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-chatbox"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-chatbox" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf11b;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf11b;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f11b" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-chatbox-working"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-chatbox-working"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-chatbox-working"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-chatbox-working"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-chatbox-working"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-chatbox-working"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-chatbox-working"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-chatbox-working"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-chatbox-working"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-chatbox-working"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-chatbox-working" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf11a;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf11a;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f11a" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-chatboxes"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-chatboxes"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-chatboxes"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-chatboxes"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-chatboxes"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-chatboxes"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-chatboxes"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-chatboxes"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-chatboxes"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-chatboxes"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-chatboxes" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf11c;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf11c;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f11c" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-chatbubble"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-chatbubble"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-chatbubble"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-chatbubble"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-chatbubble"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-chatbubble"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-chatbubble"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-chatbubble"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-chatbubble"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-chatbubble"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-chatbubble" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf11e;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf11e;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f11e" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-chatbubble-working"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-chatbubble-working"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-chatbubble-working"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-chatbubble-working"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-chatbubble-working"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-chatbubble-working"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-chatbubble-working"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-chatbubble-working"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-chatbubble-working"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-chatbubble-working"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-chatbubble-working" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf11d;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf11d;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f11d" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-chatbubbles"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-chatbubbles"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-chatbubbles"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-chatbubbles"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-chatbubbles"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-chatbubbles"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-chatbubbles"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-chatbubbles"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-chatbubbles"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-chatbubbles"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-chatbubbles" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf11f;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf11f;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f11f" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-checkmark"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-checkmark"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-checkmark"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-checkmark"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-checkmark"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-checkmark"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-checkmark"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-checkmark"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-checkmark"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-checkmark"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-checkmark" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf122;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf122;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f122" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-checkmark-circled"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-checkmark-circled"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-checkmark-circled"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-checkmark-circled"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-checkmark-circled"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-checkmark-circled"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-checkmark-circled"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-checkmark-circled"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-checkmark-circled"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-checkmark-circled"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-checkmark-circled" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf120;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf120;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f120" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-chevron-down"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-chevron-down"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-chevron-down"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-chevron-down"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-chevron-down"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-chevron-down"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-chevron-down"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-chevron-down"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-chevron-down"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-chevron-down"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-chevron-down" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf123;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf123;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f123" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-chevron-left"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-chevron-left"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-chevron-left"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-chevron-left"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-chevron-left"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-chevron-left"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-chevron-left"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-chevron-left"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-chevron-left"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-chevron-left"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-chevron-left" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf124;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf124;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f124" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-chevron-right"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-chevron-right"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-chevron-right"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-chevron-right"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-chevron-right"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-chevron-right"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-chevron-right"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-chevron-right"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-chevron-right"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-chevron-right"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-chevron-right" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf125;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf125;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f125" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-chevron-up"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-chevron-up"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-chevron-up"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-chevron-up"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-chevron-up"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-chevron-up"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-chevron-up"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-chevron-up"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-chevron-up"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-chevron-up"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-chevron-up" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf126;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf126;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f126" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-clipboard"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-clipboard"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-clipboard"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-clipboard"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-clipboard"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-clipboard"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-clipboard"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-clipboard"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-clipboard"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-clipboard"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-clipboard" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf127;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf127;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f127" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-close"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-close"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-close"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-close"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-close"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-close"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-close"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-close"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-close"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-close"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-close" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf12a;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf12a;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f12a" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-close-circled"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-close-circled"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-close-circled"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-close-circled"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-close-circled"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-close-circled"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-close-circled"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-close-circled"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-close-circled"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-close-circled"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-close-circled" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf128;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf128;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f128" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-compose"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-compose"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-compose"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-compose"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-compose"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-compose"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-compose"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-compose"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-compose"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-compose"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-compose" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf12c;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf12c;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f12c" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-connection-bars"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-connection-bars"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-connection-bars"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-connection-bars"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-connection-bars"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-connection-bars"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-connection-bars"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-connection-bars"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-connection-bars"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-connection-bars"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-connection-bars" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf274;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf274;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f274" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-crop-landscape"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-crop-landscape"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-crop-landscape"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-crop-landscape"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-crop-landscape"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-crop-landscape"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-crop-landscape"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-crop-landscape"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-crop-landscape"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-crop-landscape"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-crop-landscape" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf14d;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf14d;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f14d" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-crop-portrait"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-crop-portrait"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-crop-portrait"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-crop-portrait"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-crop-portrait"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-crop-portrait"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-crop-portrait"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-crop-portrait"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-crop-portrait"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-crop-portrait"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-crop-portrait" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf14e;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf14e;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f14e" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-edit"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-edit"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-edit"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-edit"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-edit"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-edit"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-edit"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-edit"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-edit"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-edit"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-edit" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2bf;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2bf;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2bf" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-email"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-email"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-email"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-email"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-email"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-email"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-email"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-email"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-email"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-email"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-email" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf132;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf132;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f132" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-erlenmeyer-flask"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-erlenmeyer-flask"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-erlenmeyer-flask"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-erlenmeyer-flask"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-erlenmeyer-flask"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-erlenmeyer-flask"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-erlenmeyer-flask"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-erlenmeyer-flask"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-erlenmeyer-flask"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-erlenmeyer-flask"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-erlenmeyer-flask" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf3c5;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf3c5;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f3c5" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-heart"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-heart"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-heart"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-heart"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-heart"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-heart"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-heart"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-heart"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-heart"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-heart"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-heart" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf141;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf141;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f141" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-help-circled"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-help-circled"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-help-circled"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-help-circled"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-help-circled"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-help-circled"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-help-circled"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-help-circled"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-help-circled"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-help-circled"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-help-circled" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf142;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf142;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f142" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-home"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-home"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-home"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-home"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-home"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-home"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-home"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-home"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-home"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-home"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-home" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf144;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf144;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f144" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-ios-camera"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-ios-camera"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-ios-camera"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-ios-camera"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-ios-camera"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-ios-camera"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-ios-camera"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-ios-camera"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-ios-camera"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-ios-camera"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-ios-camera" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf3f6;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf3f6;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f3f6" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-ios-email-outline"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-ios-email-outline"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-ios-email-outline"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-ios-email-outline"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-ios-email-outline"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-ios-email-outline"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-ios-email-outline"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-ios-email-outline"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-ios-email-outline"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-ios-email-outline"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-ios-email-outline" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf422;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf422;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f422" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-ios-game-controller-a"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-ios-game-controller-a"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-ios-game-controller-a"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-ios-game-controller-a"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-ios-game-controller-a"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-ios-game-controller-a"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-ios-game-controller-a"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-ios-game-controller-a"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-ios-game-controller-a"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-ios-game-controller-a"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-ios-game-controller-a" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf439;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf439;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f439" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-ios-list-outline"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-ios-list-outline"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-ios-list-outline"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-ios-list-outline"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-ios-list-outline"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-ios-list-outline"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-ios-list-outline"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-ios-list-outline"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-ios-list-outline"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-ios-list-outline"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-ios-list-outline" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf453;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf453;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f453" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-ios-plus-empty"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-ios-plus-empty"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-ios-plus-empty"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-ios-plus-empty"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-ios-plus-empty"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-ios-plus-empty"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-ios-plus-empty"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-ios-plus-empty"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-ios-plus-empty"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-ios-plus-empty"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-ios-plus-empty" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf489;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf489;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f489" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-ios-pricetag"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-ios-pricetag"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-ios-pricetag"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-ios-pricetag"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-ios-pricetag"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-ios-pricetag"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-ios-pricetag"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-ios-pricetag"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-ios-pricetag"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-ios-pricetag"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-ios-pricetag" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf48d;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf48d;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f48d" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-ios-pricetags"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-ios-pricetags"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-ios-pricetags"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-ios-pricetags"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-ios-pricetags"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-ios-pricetags"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-ios-pricetags"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-ios-pricetags"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-ios-pricetags"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-ios-pricetags"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-ios-pricetags" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf48f;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf48f;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f48f" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-ios-star"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-ios-star"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-ios-star"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-ios-star"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-ios-star"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-ios-star"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-ios-star"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-ios-star"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-ios-star"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-ios-star"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-ios-star" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf4b3;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf4b3;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f4b3" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-ios-star-half"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-ios-star-half"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-ios-star-half"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-ios-star-half"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-ios-star-half"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-ios-star-half"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-ios-star-half"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-ios-star-half"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-ios-star-half"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-ios-star-half"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-ios-star-half" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf4b1;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf4b1;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f4b1" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-ios-star-outline"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-ios-star-outline"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-ios-star-outline"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-ios-star-outline"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-ios-star-outline"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-ios-star-outline"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-ios-star-outline"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-ios-star-outline"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-ios-star-outline"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-ios-star-outline"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-ios-star-outline" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf4b2;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf4b2;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f4b2" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-ios-sunny-outline"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-ios-sunny-outline"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-ios-sunny-outline"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-ios-sunny-outline"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-ios-sunny-outline"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-ios-sunny-outline"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-ios-sunny-outline"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-ios-sunny-outline"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-ios-sunny-outline"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-ios-sunny-outline"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-ios-sunny-outline" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf4b6;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf4b6;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f4b6" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-ios-telephone"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-ios-telephone"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-ios-telephone"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-ios-telephone"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-ios-telephone"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-ios-telephone"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-ios-telephone"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-ios-telephone"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-ios-telephone"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-ios-telephone"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-ios-telephone" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf4b9;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf4b9;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f4b9" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-iphone"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-iphone"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-iphone"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-iphone"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-iphone"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-iphone"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-iphone"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-iphone"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-iphone"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-iphone"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-iphone" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf1fa;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf1fa;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f1fa" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-location"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-location"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-location"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-location"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-location"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-location"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-location"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-location"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-location"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-location"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-location" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf1ff;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf1ff;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f1ff" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-locked"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-locked"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-locked"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-locked"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-locked"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-locked"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-locked"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-locked"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-locked"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-locked"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-locked" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf200;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf200;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f200" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-loop"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-loop"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-loop"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-loop"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-loop"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-loop"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-loop"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-loop"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-loop"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-loop"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-loop" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf201;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf201;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f201" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-medkit"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-medkit"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-medkit"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-medkit"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-medkit"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-medkit"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-medkit"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-medkit"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-medkit"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-medkit"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-medkit" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2a2;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2a2;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2a2" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-minus"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-minus"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-minus"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-minus"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-minus"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-minus"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-minus"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-minus"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-minus"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-minus"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-minus" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf209;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf209;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f209" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-monitor"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-monitor"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-monitor"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-monitor"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-monitor"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-monitor"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-monitor"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-monitor"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-monitor"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-monitor"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-monitor" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf20a;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf20a;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f20a" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-navicon-round"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-navicon-round"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-navicon-round"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-navicon-round"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-navicon-round"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-navicon-round"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-navicon-round"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-navicon-round"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-navicon-round"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-navicon-round"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-navicon-round" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf20d;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf20d;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f20d" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-niche-cart"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-niche-cart"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-niche-cart"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-niche-cart"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-niche-cart"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-niche-cart"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-niche-cart"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-niche-cart"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-niche-cart"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-niche-cart"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-niche-cart" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf15a;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf15a;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f15a" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-person"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-person"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-person"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-person"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-person"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-person"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-person"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-person"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-person"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-person"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-person" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf213;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf213;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f213" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-person-stalker"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-person-stalker"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-person-stalker"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-person-stalker"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-person-stalker"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-person-stalker"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-person-stalker"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-person-stalker"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-person-stalker"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-person-stalker"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-person-stalker" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf212;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf212;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f212" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-play"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-play"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-play"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-play"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-play"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-play"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-play"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-play"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-play"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-play"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-play" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf215;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf215;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f215" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-plus"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-plus"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-plus"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-plus"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-plus"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-plus"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-plus"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-plus"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-plus"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-plus"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-plus" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf218;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf218;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f218" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-pricetag"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-pricetag"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-pricetag"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-pricetag"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-pricetag"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-pricetag"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-pricetag"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-pricetag"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-pricetag"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-pricetag"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-pricetag" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2aa;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2aa;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2aa" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-pricetags"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-pricetags"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-pricetags"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-pricetags"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-pricetags"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-pricetags"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-pricetags"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-pricetags"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-pricetags"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-pricetags"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-pricetags" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2ab;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2ab;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2ab" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-printer"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-printer"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-printer"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-printer"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-printer"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-printer"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-printer"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-printer"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-printer"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-printer"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-printer" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf21a;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf21a;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f21a" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-pull-request"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-pull-request"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-pull-request"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-pull-request"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-pull-request"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-pull-request"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-pull-request"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-pull-request"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-pull-request"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-pull-request"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-pull-request" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf345;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf345;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f345" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-quote"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-quote"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-quote"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-quote"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-quote"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-quote"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-quote"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-quote"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-quote"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-quote"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-quote" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf347;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf347;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f347" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-rotate-clockwise"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-rotate-clockwise"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-rotate-clockwise"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-rotate-clockwise"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-rotate-clockwise"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-rotate-clockwise"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-rotate-clockwise"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-rotate-clockwise"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-rotate-clockwise"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-rotate-clockwise"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-rotate-clockwise" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf14f;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf14f;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f14f" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-search"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-search"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-search"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-search"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-search"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-search"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-search"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-search"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-search"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-search"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-search" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf21f;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf21f;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f21f" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-social-facebook"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-social-facebook"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-social-facebook"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-social-facebook"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-social-facebook"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-social-facebook"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-social-facebook"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-social-facebook"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-social-facebook"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-social-facebook"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-social-facebook" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf231;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf231;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f231" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-social-googleplus"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-social-googleplus"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-social-googleplus"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-social-googleplus"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-social-googleplus"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-social-googleplus"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-social-googleplus"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-social-googleplus"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-social-googleplus"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-social-googleplus"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-social-googleplus" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf235;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf235;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f235" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-social-instagram-outline"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-social-instagram-outline"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-social-instagram-outline"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-social-instagram-outline"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-social-instagram-outline"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-social-instagram-outline"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-social-instagram-outline"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-social-instagram-outline"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-social-instagram-outline"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-social-instagram-outline"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-social-instagram-outline" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf350;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf350;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f350" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-social-linkedin-outline"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-social-linkedin-outline"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-social-linkedin-outline"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-social-linkedin-outline"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-social-linkedin-outline"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-social-linkedin-outline"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-social-linkedin-outline"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-social-linkedin-outline"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-social-linkedin-outline"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-social-linkedin-outline"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-social-linkedin-outline" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf238;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf238;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f238" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-social-pinterest"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-social-pinterest"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-social-pinterest"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-social-pinterest"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-social-pinterest"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-social-pinterest"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-social-pinterest"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-social-pinterest"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-social-pinterest"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-social-pinterest"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-social-pinterest" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2b1;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2b1;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2b1" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-social-tumblr"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-social-tumblr"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-social-tumblr"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-social-tumblr"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-social-tumblr"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-social-tumblr"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-social-tumblr"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-social-tumblr"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-social-tumblr"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-social-tumblr"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-social-tumblr" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf241;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf241;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f241" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-social-twitter"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-social-twitter"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-social-twitter"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-social-twitter"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-social-twitter"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-social-twitter"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-social-twitter"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-social-twitter"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-social-twitter"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-social-twitter"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-social-twitter" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf243;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf243;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f243" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-social-usd"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-social-usd"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-social-usd"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-social-usd"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-social-usd"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-social-usd"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-social-usd"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-social-usd"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-social-usd"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-social-usd"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-social-usd" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf353;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf353;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f353" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-social-youtube"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-social-youtube"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-social-youtube"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-social-youtube"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-social-youtube"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-social-youtube"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-social-youtube"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-social-youtube"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-social-youtube"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-social-youtube"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-social-youtube" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf24d;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf24d;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f24d" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-social-youtube-outline"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-social-youtube-outline"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-social-youtube-outline"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-social-youtube-outline"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-social-youtube-outline"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-social-youtube-outline"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-social-youtube-outline"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-social-youtube-outline"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-social-youtube-outline"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-social-youtube-outline"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-social-youtube-outline" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf24c;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf24c;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f24c" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-star"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-star"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-star"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-star"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-star"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-star"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-star"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-star"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-star"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-star"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-star" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf24e;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf24e;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f24e" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-thumbsdown"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-thumbsdown"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-thumbsdown"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-thumbsdown"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-thumbsdown"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-thumbsdown"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-thumbsdown"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-thumbsdown"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-thumbsdown"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-thumbsdown"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-thumbsdown" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf250;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf250;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f250" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-thumbsup"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-thumbsup"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-thumbsup"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-thumbsup"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-thumbsup"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-thumbsup"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-thumbsup"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-thumbsup"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-thumbsup"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-thumbsup"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-thumbsup" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf251;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf251;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f251" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-trash-a"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-trash-a"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-trash-a"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-trash-a"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-trash-a"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-trash-a"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-trash-a"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-trash-a"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-trash-a"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-trash-a"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-trash-a" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf252;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf252;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f252" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-trash-b"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-trash-b"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-trash-b"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-trash-b"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-trash-b"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-trash-b"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-trash-b"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-trash-b"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-trash-b"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-trash-b"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-trash-b" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf253;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf253;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f253" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-university"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-university"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-university"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-university"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-university"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-university"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-university"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-university"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-university"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-university"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-university" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf357;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf357;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f357" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-unlocked"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-unlocked"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-unlocked"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-unlocked"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-unlocked"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-unlocked"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-unlocked"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-unlocked"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-unlocked"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-unlocked"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-unlocked" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf254;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf254;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f254" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-wand"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-wand"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-wand"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-wand"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-wand"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-wand"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-wand"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-wand"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-wand"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-wand"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-wand" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf358;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf358;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f358" />
+  </div>
+</div>
+    </div>
+    <footer>
+      Made with love by the <a href="http://ionicframework.com/">Ionic Framework</a>
+    </footer>
+  </div>
+</body>
+</html>
