@@ -2,7 +2,9 @@
 
 ## Build Icons
 
-Build icons needs to be prefixed with `build-` to avoid conflicts with existing similar icons ex: `build-cart.svg`
+Build icons needs to be prefixed with `build-` to avoid conflicts with existing similar icons
+
+Example: `build-cart.svg`
 
 * Add any new icons to the `src/` folder.
 * Move any unused icons to the `svg/` folder.
