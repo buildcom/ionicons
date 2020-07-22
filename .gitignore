@@ -6,3 +6,4 @@ _site
 bower_components
 node_modules
 npm-debug.log
+.idea

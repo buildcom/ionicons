@@ -1,5 +1,5 @@
 {
-  "build_hash": "66abbacf3b67e466970f176fe7d7a17b",
+  "build_hash": "500f05126f0e9e8f2ce3b69d01558880",
   "prefix": "ion-",
   "version": "2.0.0",
   "name": "Ionicons",
@@ -333,6 +333,10 @@
       "name": "edit"
     },
     {
+      "code": "0xf17d",
+      "name": "ellipsis-horizontal"
+    },
+    {
       "code": "0xf132",
       "name": "email"
     },
@@ -433,6 +437,10 @@
       "name": "iphone"
     },
     {
+      "code": "0xf299",
+      "name": "lightbulb"
+    },
+    {
       "code": "0xf1ff",
       "name": "location"
     },
@@ -493,8 +501,8 @@
       "name": "person-add"
     },
     {
-      "code": "0xf212",
-      "name": "person-stalker"
+      "code": "0xf17c",
+      "name": "person-stalkers"
     },
     {
       "code": "0xf215",
@@ -503,6 +511,10 @@
     {
       "code": "0xf218",
       "name": "plus"
+    },
+    {
+      "code": "0xf216",
+      "name": "plus-circled"
     },
     {
       "code": "0xf2aa",
