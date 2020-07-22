@@ -1,5 +1,5 @@
 {
-  "build_hash": "99e7b4562315dbe6630f6fd1cede7898",
+  "build_hash": "500f05126f0e9e8f2ce3b69d01558880",
   "prefix": "ion-",
   "version": "2.0.0",
   "name": "Ionicons",
@@ -1039,6 +1039,10 @@
     {
       "code": "0xf131",
       "name": "eject"
+    },
+    {
+      "code": "0xf17d",
+      "name": "ellipsis-horizontal"
     },
     {
       "code": "0xf132",
@@ -2495,6 +2499,10 @@
     {
       "code": "0xf212",
       "name": "person-stalker"
+    },
+    {
+      "code": "0xf17c",
+      "name": "person-stalkers"
     },
     {
       "code": "0xf2a5",
