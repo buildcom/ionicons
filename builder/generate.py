@@ -1,4 +1,5 @@
 from subprocess import call
+import sys
 import os
 import json
 
@@ -27,9 +28,12 @@ def main():
 
 def generate_font_files():
   print "Generate Fonts"
-  cmd = "fontforge -script %s/scripts/generate_font.py" % (BUILDER_PATH)
-  call(cmd, shell=True)
-
+  try:
+    cmd = "fontforge -script %s/scripts/generate_font.py" % (BUILDER_PATH)
+    call(cmd, shell=True)
+  except:
+    print "Unexpected error:", sys.exc_info()[0]
+    raise
 
 def rename_svg_glyph_names(data):
   # hacky and slow (but safe) way to rename glyph-name attributes
