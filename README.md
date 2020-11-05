@@ -52,21 +52,44 @@ This repo already comes with all the files built and ready to go, but can also b
 
 1) Install FontForge, which is the program that creates the font files from the SVG files:
 
+    ```
     $ brew install fontforge ttfautohint
+    ```
+
+    **Important Note:** Fontforge is installed in the host OS as a modified version of a python interpreter (the latest fontforge version in homebrew uses Python 3, not 2.7).
 
 2) Install Ruby (>= 2.5.1p57) on Mac OSX
 
+     ```
     $ brew install ruby
+    ```
 
 3) Install [Sass](http://sass-lang.com/)
 
+    ```
     $ gem install sass
+    ```
 
-4) Add or subtract files from the `src/` folder you'd like to be apart of the font files.
+4) If you are on **Mac OSX**, you might need to run the following commands to install `sfnt2woff` globally
+    (the local binary provided in the following location: ./builder/scripts/sfnt2woff may fail).
+    The other alternative: Try including this binary path in your global $PATH environment variable.
 
-5) Modify any settings in the `builder/manifest.json` file. You can change the name of the font-family and CSS classname prefix.
+    ```
+    $ brew tap bramstein/webfonttools
+    $ brew install woff2
+    ```
+    
+    and then:
 
-6) Run the build command:
+    ```
+    $ brew install sfnt2woff
+    ```
+
+5) Add or subtract files from the `src/` folder you'd like to be apart of the font files.
+
+6) Modify any settings in the `builder/manifest.json` file. You can change the name of the font-family and CSS classname prefix.
+
+7) Run the build command:
 
     python ./builder/generate.py
 
