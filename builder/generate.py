@@ -1,8 +1,9 @@
 from subprocess import call
+from pathlib import Path
+from svgutils import transform as sg
 import sys
 import os
-import random
-import svgwrite
+import uuid
 import tempfile
 import json
 import copy
@@ -14,10 +15,10 @@ CSS_FOLDER_PATH = os.path.join(ROOT_PATH, 'css')
 SCSS_FOLDER_PATH = os.path.join(ROOT_PATH, 'scss')
 LESS_FOLDER_PATH = os.path.join(ROOT_PATH, 'less')
 
-INPUT_SVG_DIR = os.path.join(BUILDER_PATH, '..', '..', 'src')
-OUTPUT_FONT_DIR = os.path.join(BUILDER_PATH, '..', '..', 'fonts')
-MANIFEST_PATH = os.path.join(BUILDER_PATH, '..', 'manifest.json')
-BUILD_DATA_PATH = os.path.join(BUILDER_PATH, '..', 'build_data.json')
+INPUT_SVG_DIR = os.path.normpath(os.path.join(BUILDER_PATH, '..', 'src'))
+OUTPUT_SVG_DIR = os.path.normpath(os.path.join(BUILDER_PATH, '..', 'fonts'))
+MANIFEST_PATH = os.path.normpath(os.path.join(BUILDER_PATH, 'manifest.json'))
+BUILD_DATA_PATH = os.path.normpath(os.path.join(BUILDER_PATH, 'build_data.json'))
 
 manifest_file = open(MANIFEST_PATH, 'r')
 manifest_data = json.loads(manifest_file.read())
@@ -27,6 +28,12 @@ print("Load Manifest, Icons: %s" % (len(manifest_data['icons'])))
 build_data = copy.deepcopy(manifest_data)
 build_data['icons'] = []
 
+# Templates
+svg_tpl = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"></svg>'
+symbol_tpl = '<symbol viewBox="{} {} {} {}" id="{}"></symbol>'
+
+
+# Main
 def main():
     generate_font_files()
     data = get_build_data()
@@ -40,8 +47,8 @@ def main():
 
 
 def generate_font_files():
-    print("Generate SVG Fonts")
     try:
+        print("Generate SVG Fonts")
         bundle_svg_files()
     except OSError:
         print("Unexpected error: ", sys.exc_info()[0])
@@ -50,8 +57,7 @@ def generate_font_files():
 
 def bundle_svg_files():
     cp = 0xf100
-    glyphs = []
-    font_name = manifest_data['name']
+    existing_filesize = Path(FONTS_FOLDER_PATH + '/ionicons.svg').stat().st_size
     for dirname, dirnames, filenames in os.walk(INPUT_SVG_DIR):
         for filename in filenames:
             name, ext = os.path.splitext(filename)
@@ -107,46 +113,80 @@ def bundle_svg_files():
 
                     svgfile.close()
                     tmpsvgfile.file.close()
-
-                    filepath = tmpsvgfile.name
                     # end hack
-
-                # Fixme with svgwrite library
-                # glyphs.append(svgwrite.)
-                # glyph = f.createChar(int(chr_code, 16))
-                # glyph.importOutlines(filepath)
 
                 # if we created a temporary file, let's clean it up
                 if tmpsvgfile:
                     os.unlink(tmpsvgfile.name)
 
-        font_file = '%s/ionicons' % OUTPUT_FONT_DIR
+    # Combine all svg files
+    combine_svg_files()
 
-    # FIXME: Hash has to be calculated depending on possible changes.
-    build_hash = hex(random.getrandbits(128))
+    new_filesize = Path(FONTS_FOLDER_PATH + '/ionicons.svg').stat().st_size
+    if new_filesize != existing_filesize:
+        build_hash = uuid.uuid4().hex
+    else:
+        build_hash = manifest_data.get('build_hash')
 
     if build_hash == manifest_data.get('build_hash'):
         print("Source files unchanged, did not rebuild fonts")
     else:
-        svg_output(build_hash, glyphs, font_name, font_file)
+        print("Source files changed, updating list...")
+        svg_output(build_hash)
 
-# Output Compiled SVG file
-def svg_output(build_hash, glyph, font_name, font_file):
+
+def get_view_box(icon):
+    view_box = icon.root.get('viewBox')
+    if view_box:
+        size = view_box.split()
+        if size[0]:
+            x = size[0]
+        else:
+            x = 0
+        if size[1]:
+            y = size[1]
+        else:
+            y = 0
+        if size[2]:
+            width = size[2]
+        else:
+            width = 512
+        if size[3]:
+            height = size[3]
+        else:
+            height = 512
+    else:
+        x = 0
+        y = 0
+        width = 512
+        height = 512
+    return { "x": x, "y": y, "width": width, "height": height}
+
+
+# Make Symbol
+def make_symbol(container: sg.SVGFigure, name, filepath):
+    icon = sg.fromfile(filepath)
+    size = get_view_box(icon)
+    symbol = sg.fromstring(symbol_tpl.format(size['x'], size['y'], size['width'], size['height'], name))
+    symbol.append(icon.getroot())
+    container.append(symbol)
+
+
+# Combine all svg files
+def combine_svg_files():
+    output = sg.fromstring(svg_tpl)
+    for root, dirs, files in os.walk(INPUT_SVG_DIR):
+        for filename in files:
+            name, ext = os.path.splitext(filename)
+            filepath = os.path.join(root, filename)
+            if ext in ['.svg']:
+                make_symbol(output, name, filepath)
+    output.save(OUTPUT_SVG_DIR + '/ionicons.svg')
+
+
+# Output Final SVG file
+def svg_output(build_hash):
     manifest_data['build_hash'] = build_hash
-
-    # Perform SVG header modification for webkit
-    svgfile = open(font_file + '.svg', 'r+')
-    svgtext = svgfile.read()
-    svgfile.seek(0)
-    svgfile.write(svgtext.replace('''<svg>''', '''<svg xmlns="http://www.w3.org/2000/svg">'''))
-
-    # FIXME: with svgwrite compile glyphs and inject them in
-    # font.fontName = font_name
-    # font.familyName = font_name
-    # font.fullname = font_name
-    # font.generate(font_file + '.svg')
-
-    svgfile.close()
 
     manifest_data['icons'] = sorted(manifest_data['icons'], key=lambda k: k['name'])
     build_data['icons'] = sorted(build_data['icons'], key=lambda k: k['name'])

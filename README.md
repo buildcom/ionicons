@@ -50,28 +50,40 @@ You can use [ionicons.com](http://ionicons.com) to easily find the icon you want
 
 This repo already comes with all the files built and ready to go, but can also build the fonts from the source. Requires Python 3 and Sass via RubyGem:
 
-1) Install Ruby (>= 2.5.1p57) on Mac OSX
+1) With Python 3 installed in you system, install the follow python package:
+
+    ```
+    $ pip install svgutils
+    ```
+
+2) Install Ruby (>= 2.5.1p57) on Mac OSX
 
      ```
     $ brew install ruby
     ```
 
-2) Install [Sass](http://sass-lang.com/)
+3) Install [Sass](http://sass-lang.com/)
 
     ```
     $ gem install sass
     ```
 
-3) Add or subtract files from the `src/` folder you'd like to be apart of the font files.
+4) Add or subtract files from the `src/` folder you'd like to be apart of the font files.
 
-4) Modify any settings in the `builder/manifest.json` file. You can change the name of the font-family and CSS classname prefix.
+5) Modify any settings in the `builder/manifest.json` file. You can change the name of the font-family and CSS classname prefix.
 
-5) Run the build command:
+6) Run the build command:
 
     ```
     $ python ./builder/generate.py
     ```
 
+7) If you wish to verify the current cheatsheet with your latest changes, in the root of the repo folder run:
+
+   ```
+   $ python -m http.server 9000
+   // open a browser and navigate to: http://localhost:9000/cheatsheet.html
+   ```
 
 ## License
 
