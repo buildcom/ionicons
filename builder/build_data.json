@@ -1,640 +1,640 @@
 {
-  "build_hash": "3e65f291f66808da64018b7e62222d82",
+  "build_hash": "4330bfc22a7166ae2f284603c9ea09b8",
   "prefix": "ion-",
   "version": "2.0.0",
   "name": "Ionicons",
   "icons": [
     {
-      "code": "0xf100",
-      "name": "alert-circled"
+      "name": "alert-circled",
+      "code": "0xf100"
     },
     {
-      "code": "0xf35f",
-      "name": "android-arrow-dropdown"
+      "name": "android-arrow-dropdown",
+      "code": "0xf35f"
     },
     {
-      "code": "0xf373",
-      "name": "android-checkbox-outline"
+      "name": "android-checkbox-outline",
+      "code": "0xf373"
     },
     {
-      "code": "0xf372",
-      "name": "android-checkbox-outline-blank"
+      "name": "android-checkbox-outline-blank",
+      "code": "0xf372"
     },
     {
-      "code": "0xf2d7",
-      "name": "android-close"
+      "name": "android-close",
+      "code": "0xf2d7"
     },
     {
-      "code": "0xf388",
-      "name": "android-favorite"
+      "name": "android-favorite",
+      "code": "0xf388"
     },
     {
-      "code": "0xf387",
-      "name": "android-favorite-outline"
+      "name": "android-favorite-outline",
+      "code": "0xf387"
     },
     {
-      "code": "0xf2e0",
-      "name": "android-folder"
+      "name": "android-folder",
+      "code": "0xf2e0"
     },
     {
-      "code": "0xf3a6",
-      "name": "android-radio-button-off"
+      "name": "android-radio-button-off",
+      "code": "0xf3a6"
     },
     {
-      "code": "0xf3a7",
-      "name": "android-radio-button-on"
+      "name": "android-radio-button-on",
+      "code": "0xf3a7"
     },
     {
-      "code": "0xf3aa",
-      "name": "android-restaurant"
+      "name": "android-restaurant",
+      "code": "0xf3aa"
     },
     {
-      "code": "0xf2f7",
-      "name": "android-settings"
+      "name": "android-settings",
+      "code": "0xf2f7"
     },
     {
-      "code": "0xf102",
-      "name": "archive"
+      "name": "archive",
+      "code": "0xf102"
     },
     {
-      "code": "0xf17a",
-      "name": "archive-cabinet"
+      "name": "archive-cabinet",
+      "code": "0xf17a"
     },
     {
-      "code": "0xf262",
-      "name": "arrow-graph-up-right"
+      "name": "arrow-graph-up-right",
+      "code": "0xf262"
     },
     {
-      "code": "0xf265",
-      "name": "arrow-return-left"
+      "name": "arrow-return-left",
+      "code": "0xf265"
     },
     {
-      "code": "0xf10e",
-      "name": "arrow-up-c"
+      "name": "arrow-up-c",
+      "code": "0xf10e"
     },
     {
-      "code": "0xf26c",
-      "name": "briefcase"
+      "name": "briefcase",
+      "code": "0xf26c"
     },
     {
-      "code": "0xf171",
-      "name": "build-add-to-cart"
+      "name": "build-add-to-cart",
+      "code": "0xf171"
     },
     {
-      "code": "0xf16c",
-      "name": "build-add-to-projects"
+      "name": "build-add-to-projects",
+      "code": "0xf16c"
     },
     {
-      "code": "0xf169",
-      "name": "build-asterisk-projects"
+      "name": "build-asterisk-projects",
+      "code": "0xf169"
     },
     {
-      "code": "0xf16e",
-      "name": "build-blueprint"
+      "name": "build-blueprint",
+      "code": "0xf16e"
     },
     {
-      "code": "0xf165",
-      "name": "build-bluetarp"
+      "name": "build-bluetarp",
+      "code": "0xf165"
     },
     {
-      "code": "0xf15e",
-      "name": "build-box"
+      "name": "build-box",
+      "code": "0xf15e"
     },
     {
-      "code": "0xf138",
-      "name": "build-cart"
+      "name": "build-cart",
+      "code": "0xf138"
     },
     {
-      "code": "0xf15b",
-      "name": "build-cart-large"
+      "name": "build-cart-large",
+      "code": "0xf15b"
     },
     {
-      "code": "0xf15c",
-      "name": "build-cart-small"
+      "name": "build-cart-small",
+      "code": "0xf15c"
     },
     {
-      "code": "0xf15f",
-      "name": "build-delivery-truck"
+      "name": "build-delivery-truck",
+      "code": "0xf15f"
     },
     {
-      "code": "0xf16d",
-      "name": "build-download"
+      "name": "build-download",
+      "code": "0xf16d"
     },
     {
-      "code": "0xf159",
-      "name": "build-logo"
+      "name": "build-logo",
+      "code": "0xf159"
     },
     {
-      "code": "0xf164",
-      "name": "build-logo-door"
+      "name": "build-logo-door",
+      "code": "0xf164"
     },
     {
-      "code": "0xf158",
-      "name": "build-logo-simplified"
+      "name": "build-logo-simplified",
+      "code": "0xf158"
     },
     {
-      "code": "0xf166",
-      "name": "build-nay"
+      "name": "build-nay",
+      "code": "0xf166"
     },
     {
-      "code": "0xf168",
-      "name": "build-order-add"
+      "name": "build-order-add",
+      "code": "0xf168"
     },
     {
-      "code": "0xf13c",
-      "name": "build-order-status"
+      "name": "build-order-status",
+      "code": "0xf13c"
     },
     {
-      "code": "0xf170",
-      "name": "build-quickship"
+      "name": "build-quickship",
+      "code": "0xf170"
     },
     {
-      "code": "0xf172",
-      "name": "build-returns"
+      "name": "build-returns",
+      "code": "0xf172"
     },
     {
-      "code": "0xf146",
-      "name": "build-rewards"
+      "name": "build-rewards",
+      "code": "0xf146"
     },
     {
-      "code": "0xf145",
-      "name": "build-rewards-color"
+      "name": "build-rewards-color",
+      "code": "0xf145"
     },
     {
-      "code": "0xf16f",
-      "name": "build-shipping"
+      "name": "build-shipping",
+      "code": "0xf16f"
     },
     {
-      "code": "0xf155",
-      "name": "build-social-facebooklike"
+      "name": "build-social-facebooklike",
+      "code": "0xf155"
     },
     {
-      "code": "0xf156",
-      "name": "build-social-googleplusone"
+      "name": "build-social-googleplusone",
+      "code": "0xf156"
     },
     {
-      "code": "0xf157",
-      "name": "build-social-stumbleupon"
+      "name": "build-social-stumbleupon",
+      "code": "0xf157"
     },
     {
-      "code": "0xf160",
-      "name": "build-social-youtube-outline"
+      "name": "build-social-youtube-outline",
+      "code": "0xf160"
     },
     {
-      "code": "0xf17b",
-      "name": "build-subarrow"
+      "name": "build-subarrow",
+      "code": "0xf17b"
     },
     {
-      "code": "0xf175",
-      "name": "build-tracking"
+      "name": "build-tracking",
+      "code": "0xf175"
     },
     {
-      "code": "0xf14c",
-      "name": "build-user"
+      "name": "build-user",
+      "code": "0xf14c"
     },
     {
-      "code": "0xf167",
-      "name": "build-view-gallery"
+      "name": "build-view-gallery",
+      "code": "0xf167"
     },
     {
-      "code": "0xf161",
-      "name": "build-view-grid"
+      "name": "build-view-grid",
+      "code": "0xf161"
     },
     {
-      "code": "0xf173",
-      "name": "build-view-grid3x3"
+      "name": "build-view-grid3x3",
+      "code": "0xf173"
     },
     {
-      "code": "0xf162",
-      "name": "build-view-list"
+      "name": "build-view-list",
+      "code": "0xf162"
     },
     {
-      "code": "0xf153",
-      "name": "build-zoom-in"
+      "name": "build-zoom-in",
+      "code": "0xf153"
     },
     {
-      "code": "0xf154",
-      "name": "build-zoom-out"
+      "name": "build-zoom-out",
+      "code": "0xf154"
     },
     {
-      "code": "0xf26d",
-      "name": "calculator"
+      "name": "calculator",
+      "code": "0xf26d"
     },
     {
-      "code": "0xf117",
-      "name": "calendar"
+      "name": "calendar",
+      "code": "0xf117"
     },
     {
-      "code": "0xf118",
-      "name": "camera"
+      "name": "camera",
+      "code": "0xf118"
     },
     {
-      "code": "0xf119",
-      "name": "card"
+      "name": "card",
+      "code": "0xf119"
     },
     {
-      "code": "0xf176",
-      "name": "cart"
+      "name": "cart",
+      "code": "0xf176"
     },
     {
-      "code": "0xf316",
-      "name": "cash"
+      "name": "cash",
+      "code": "0xf316"
     },
     {
-      "code": "0xf11b",
-      "name": "chatbox"
+      "name": "chatbox",
+      "code": "0xf11b"
     },
     {
-      "code": "0xf11a",
-      "name": "chatbox-working"
+      "name": "chatbox-working",
+      "code": "0xf11a"
     },
     {
-      "code": "0xf11c",
-      "name": "chatboxes"
+      "name": "chatboxes",
+      "code": "0xf11c"
     },
     {
-      "code": "0xf11e",
-      "name": "chatbubble"
+      "name": "chatbubble",
+      "code": "0xf11e"
     },
     {
-      "code": "0xf11d",
-      "name": "chatbubble-working"
+      "name": "chatbubble-working",
+      "code": "0xf11d"
     },
     {
-      "code": "0xf11f",
-      "name": "chatbubbles"
+      "name": "chatbubbles",
+      "code": "0xf11f"
     },
     {
-      "code": "0xf122",
-      "name": "checkmark"
+      "name": "checkmark",
+      "code": "0xf122"
     },
     {
-      "code": "0xf120",
-      "name": "checkmark-circled"
+      "name": "checkmark-circled",
+      "code": "0xf120"
     },
     {
-      "code": "0xf123",
-      "name": "chevron-down"
+      "name": "chevron-down",
+      "code": "0xf123"
     },
     {
-      "code": "0xf124",
-      "name": "chevron-left"
+      "name": "chevron-left",
+      "code": "0xf124"
     },
     {
-      "code": "0xf125",
-      "name": "chevron-right"
+      "name": "chevron-right",
+      "code": "0xf125"
     },
     {
-      "code": "0xf126",
-      "name": "chevron-up"
+      "name": "chevron-up",
+      "code": "0xf126"
     },
     {
-      "code": "0xf127",
-      "name": "clipboard"
+      "name": "clipboard",
+      "code": "0xf127"
     },
     {
-      "code": "0xf12a",
-      "name": "close"
+      "name": "close",
+      "code": "0xf12a"
     },
     {
-      "code": "0xf128",
-      "name": "close-circled"
+      "name": "close-circled",
+      "code": "0xf128"
     },
     {
-      "code": "0xf178",
-      "name": "collapse"
+      "name": "collapse",
+      "code": "0xf178"
     },
     {
-      "code": "0xf12c",
-      "name": "compose"
+      "name": "compose",
+      "code": "0xf12c"
     },
     {
-      "code": "0xf274",
-      "name": "connection-bars"
+      "name": "connection-bars",
+      "code": "0xf274"
     },
     {
-      "code": "0xf179",
-      "name": "copy"
+      "name": "copy",
+      "code": "0xf179"
     },
     {
-      "code": "0xf14d",
-      "name": "crop-landscape"
+      "name": "crop-landscape",
+      "code": "0xf14d"
     },
     {
-      "code": "0xf14e",
-      "name": "crop-portrait"
+      "name": "crop-portrait",
+      "code": "0xf14e"
     },
     {
-      "code": "0xf318",
-      "name": "cube"
+      "name": "cube",
+      "code": "0xf318"
     },
     {
-      "code": "0xf2bf",
-      "name": "edit"
+      "name": "edit",
+      "code": "0xf2bf"
     },
     {
-      "code": "0xf17d",
-      "name": "ellipsis-horizontal"
+      "name": "ellipsis-horizontal",
+      "code": "0xf17d"
     },
     {
-      "code": "0xf132",
-      "name": "email"
+      "name": "email",
+      "code": "0xf132"
     },
     {
-      "code": "0xf3c5",
-      "name": "erlenmeyer-flask"
+      "name": "erlenmeyer-flask",
+      "code": "0xf3c5"
     },
     {
-      "code": "0xf177",
-      "name": "expand"
+      "name": "expand",
+      "code": "0xf177"
     },
     {
-      "code": "0xf133",
-      "name": "eye"
+      "name": "eye",
+      "code": "0xf133"
     },
     {
-      "code": "0xf141",
-      "name": "heart"
+      "name": "heart",
+      "code": "0xf141"
     },
     {
-      "code": "0xf142",
-      "name": "help-circled"
+      "name": "help-circled",
+      "code": "0xf142"
     },
     {
-      "code": "0xf144",
-      "name": "home"
+      "name": "home",
+      "code": "0xf144"
     },
     {
-      "code": "0xf3e8",
-      "name": "ios-book"
+      "name": "ios-book",
+      "code": "0xf3e8"
     },
     {
-      "code": "0xf3f6",
-      "name": "ios-camera"
+      "name": "ios-camera",
+      "code": "0xf3f6"
     },
     {
-      "code": "0xf3f8",
-      "name": "ios-cart"
+      "name": "ios-cart",
+      "code": "0xf3f8"
     },
     {
-      "code": "0xf422",
-      "name": "ios-email-outline"
+      "name": "ios-email-outline",
+      "code": "0xf422"
     },
     {
-      "code": "0xf439",
-      "name": "ios-game-controller-a"
+      "name": "ios-game-controller-a",
+      "code": "0xf439"
     },
     {
-      "code": "0xf454",
-      "name": "ios-list"
+      "name": "ios-list",
+      "code": "0xf454"
     },
     {
-      "code": "0xf453",
-      "name": "ios-list-outline"
+      "name": "ios-list-outline",
+      "code": "0xf453"
     },
     {
-      "code": "0xf471",
-      "name": "ios-paper-outline"
+      "name": "ios-paper-outline",
+      "code": "0xf471"
     },
     {
-      "code": "0xf489",
-      "name": "ios-plus-empty"
+      "name": "ios-plus-empty",
+      "code": "0xf489"
     },
     {
-      "code": "0xf48d",
-      "name": "ios-pricetag"
+      "name": "ios-pricetag",
+      "code": "0xf48d"
     },
     {
-      "code": "0xf48f",
-      "name": "ios-pricetags"
+      "name": "ios-pricetags",
+      "code": "0xf48f"
     },
     {
-      "code": "0xf4b3",
-      "name": "ios-star"
+      "name": "ios-star",
+      "code": "0xf4b3"
     },
     {
-      "code": "0xf4b1",
-      "name": "ios-star-half"
+      "name": "ios-star-half",
+      "code": "0xf4b1"
     },
     {
-      "code": "0xf4b2",
-      "name": "ios-star-outline"
+      "name": "ios-star-outline",
+      "code": "0xf4b2"
     },
     {
-      "code": "0xf4b7",
-      "name": "ios-sunny"
+      "name": "ios-sunny",
+      "code": "0xf4b7"
     },
     {
-      "code": "0xf4b6",
-      "name": "ios-sunny-outline"
+      "name": "ios-sunny-outline",
+      "code": "0xf4b6"
     },
     {
-      "code": "0xf4b9",
-      "name": "ios-telephone"
+      "name": "ios-telephone",
+      "code": "0xf4b9"
     },
     {
-      "code": "0xf1fa",
-      "name": "iphone"
+      "name": "iphone",
+      "code": "0xf1fa"
     },
     {
-      "code": "0xf299",
-      "name": "lightbulb"
+      "name": "lightbulb",
+      "code": "0xf299"
     },
     {
-      "code": "0xf1ff",
-      "name": "location"
+      "name": "location",
+      "code": "0xf1ff"
     },
     {
-      "code": "0xf200",
-      "name": "locked"
+      "name": "locked",
+      "code": "0xf200"
     },
     {
-      "code": "0xf201",
-      "name": "loop"
+      "name": "loop",
+      "code": "0xf201"
     },
     {
-      "code": "0xf2a2",
-      "name": "medkit"
+      "name": "medkit",
+      "code": "0xf2a2"
     },
     {
-      "code": "0xf209",
-      "name": "minus"
+      "name": "minus",
+      "code": "0xf209"
     },
     {
-      "code": "0xf20a",
-      "name": "monitor"
+      "name": "monitor",
+      "code": "0xf20a"
     },
     {
-      "code": "0xf20b",
-      "name": "more"
+      "name": "more",
+      "code": "0xf20b"
     },
     {
-      "code": "0xf174",
-      "name": "move"
+      "name": "move",
+      "code": "0xf174"
     },
     {
-      "code": "0xf20e",
-      "name": "navicon"
+      "name": "navicon",
+      "code": "0xf20e"
     },
     {
-      "code": "0xf20d",
-      "name": "navicon-round"
+      "name": "navicon-round",
+      "code": "0xf20d"
     },
     {
-      "code": "0xf15a",
-      "name": "niche-cart"
+      "name": "niche-cart",
+      "code": "0xf15a"
     },
     {
-      "code": "0xf4d5",
-      "name": "paintbrush"
+      "name": "paintbrush",
+      "code": "0xf4d5"
     },
     {
-      "code": "0xf2c3",
-      "name": "paper-airplane"
+      "name": "paper-airplane",
+      "code": "0xf2c3"
     },
     {
-      "code": "0xf213",
-      "name": "person"
+      "name": "person",
+      "code": "0xf213"
     },
     {
-      "code": "0xf211",
-      "name": "person-add"
+      "name": "person-add",
+      "code": "0xf211"
     },
     {
-      "code": "0xf17c",
-      "name": "person-stalkers"
+      "name": "person-stalkers",
+      "code": "0xf17c"
     },
     {
-      "code": "0xf215",
-      "name": "play"
+      "name": "play",
+      "code": "0xf215"
     },
     {
-      "code": "0xf218",
-      "name": "plus"
+      "name": "plus",
+      "code": "0xf218"
     },
     {
-      "code": "0xf216",
-      "name": "plus-circled"
+      "name": "plus-circled",
+      "code": "0xf216"
     },
     {
-      "code": "0xf2aa",
-      "name": "pricetag"
+      "name": "pricetag",
+      "code": "0xf2aa"
     },
     {
-      "code": "0xf2ab",
-      "name": "pricetags"
+      "name": "pricetags",
+      "code": "0xf2ab"
     },
     {
-      "code": "0xf21a",
-      "name": "printer"
+      "name": "printer",
+      "code": "0xf21a"
     },
     {
-      "code": "0xf345",
-      "name": "pull-request"
+      "name": "pull-request",
+      "code": "0xf345"
     },
     {
-      "code": "0xf347",
-      "name": "quote"
+      "name": "quote",
+      "code": "0xf347"
     },
     {
-      "code": "0xf14f",
-      "name": "rotate-clockwise"
+      "name": "rotate-clockwise",
+      "code": "0xf14f"
     },
     {
-      "code": "0xf17e",
-      "name": "save"
+      "name": "save",
+      "code": "0xf17e"
     },
     {
-      "code": "0xf21f",
-      "name": "search"
+      "name": "search",
+      "code": "0xf21f"
     },
     {
-      "code": "0xf16a",
-      "name": "shippingbox"
+      "name": "shippingbox",
+      "code": "0xf16a"
     },
     {
-      "code": "0xf225",
-      "name": "social-android"
+      "name": "social-android",
+      "code": "0xf225"
     },
     {
-      "code": "0xf227",
-      "name": "social-apple"
+      "name": "social-apple",
+      "code": "0xf227"
     },
     {
-      "code": "0xf231",
-      "name": "social-facebook"
+      "name": "social-facebook",
+      "code": "0xf231"
     },
     {
-      "code": "0xf235",
-      "name": "social-googleplus"
+      "name": "social-googleplus",
+      "code": "0xf235"
     },
     {
-      "code": "0xf350",
-      "name": "social-instagram-outline"
+      "name": "social-instagram-outline",
+      "code": "0xf350"
     },
     {
-      "code": "0xf238",
-      "name": "social-linkedin-outline"
+      "name": "social-linkedin-outline",
+      "code": "0xf238"
     },
     {
-      "code": "0xf2b1",
-      "name": "social-pinterest"
+      "name": "social-pinterest",
+      "code": "0xf2b1"
     },
     {
-      "code": "0xf241",
-      "name": "social-tumblr"
+      "name": "social-tumblr",
+      "code": "0xf241"
     },
     {
-      "code": "0xf243",
-      "name": "social-twitter"
+      "name": "social-twitter",
+      "code": "0xf243"
     },
     {
-      "code": "0xf353",
-      "name": "social-usd"
+      "name": "social-usd",
+      "code": "0xf353"
     },
     {
-      "code": "0xf24d",
-      "name": "social-youtube"
+      "name": "social-youtube",
+      "code": "0xf24d"
     },
     {
-      "code": "0xf24c",
-      "name": "social-youtube-outline"
+      "name": "social-youtube-outline",
+      "code": "0xf24c"
     },
     {
-      "code": "0xf24e",
-      "name": "star"
+      "name": "star",
+      "code": "0xf24e"
     },
     {
-      "code": "0xf250",
-      "name": "thumbsdown"
+      "name": "thumbsdown",
+      "code": "0xf250"
     },
     {
-      "code": "0xf251",
-      "name": "thumbsup"
+      "name": "thumbsup",
+      "code": "0xf251"
     },
     {
-      "code": "0xf252",
-      "name": "trash-a"
+      "name": "trash-a",
+      "code": "0xf252"
     },
     {
-      "code": "0xf253",
-      "name": "trash-b"
+      "name": "trash-b",
+      "code": "0xf253"
     },
     {
-      "code": "0xf357",
-      "name": "university"
+      "name": "university",
+      "code": "0xf357"
     },
     {
-      "code": "0xf254",
-      "name": "unlocked"
+      "name": "unlocked",
+      "code": "0xf254"
     },
     {
-      "code": "0xf16b",
-      "name": "us-flag"
+      "name": "us-flag",
+      "code": "0xf16b"
     },
     {
-      "code": "0xf358",
-      "name": "wand"
+      "name": "wand",
+      "code": "0xf358"
     }
   ]
 }
