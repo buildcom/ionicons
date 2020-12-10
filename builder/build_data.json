@@ -1,5 +1,5 @@
 {
-  "build_hash": "4330bfc22a7166ae2f284603c9ea09b8",
+  "build_hash": "e50a48186bfa4688b060178d5753b953",
   "prefix": "ion-",
   "version": "2.0.0",
   "name": "Ionicons",
@@ -547,6 +547,10 @@
     {
       "name": "search",
       "code": "0xf21f"
+    },
+    {
+      "name": "send",
+      "code": "0xf17f"
     },
     {
       "name": "shippingbox",
