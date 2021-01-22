@@ -1,5 +1,5 @@
 {
-  "build_hash": "9b7fdaaff18548bfb372b6e4122f1e8c",
+  "build_hash": "8703aaa5368949d29ea7fa01c5d00dde",
   "prefix": "ion-",
   "version": "2.0.0",
   "name": "Ionicons",
@@ -767,6 +767,10 @@
     {
       "code": "0xf13c",
       "name": "build-order-status"
+    },
+    {
+      "name": "build-projects",
+      "code": "0xf180"
     },
     {
       "code": "0xf170",
